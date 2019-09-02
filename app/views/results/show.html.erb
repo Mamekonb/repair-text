@@ -12,22 +12,13 @@
    </div>
    <!-- ヘッダー終了 -->
 
-   <div class="linkbar">
-     <ul>
-       <li><%= link_to("修復費用計算フォーム","/calculate/new") %></li>
-       <li><%= link_to("水損公文書修復活動とは","/calculate/about") %></li>
-       <li><%= link_to("修復方法-自然乾燥","/calculate/natural") %></li>
-       <li><%= link_to("修復方法-文書洗浄","/calculate/wash") %></li>
-       <li><%= link_to("修復事例","/calculate/case") %></li>
-       <li><%= link_to("修復物品購入フォーム","/calculate/shop") %></li>
-     </ul>
-   </div>
-
   <!-- 結果表示部分開始 -->
   <div class="main">
 
-   <p>修復費用は<span><%= "約"+(@setting.doc_num.to_i *  5000).to_s+"円" %></span>です。</p>
-   <p>資料1冊あたりの厚さは<span><%= (@setting.doc_mater.to_i * 100 / @setting.doc_num.to_i ).to_s + "cm" %></span>です。</p>
+   <br><p>遷移成功！</p>
+
+   <p><%= "修復したい資料の数は"+@result[:doc_num].to_s+"冊ですね。" %></p>
+   <p><%= "資料全ての厚さは"+@result[:doc_mater].to_s+"mですね。" %></p>
 
    <div class="main">
     <table border="1" align="center">

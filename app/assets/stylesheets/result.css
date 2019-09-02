@@ -1,0 +1,73 @@
+/* 結果表示用styleseat */
+
+body{
+  background-color: #e0ffff;
+  margin: 0px 0px 0px 0px;
+  min-width:700px;
+}
+
+.headerbg {
+background-image: url("treatment-02.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+height: 200px;
+min-width: 700px;
+}
+
+.header{
+font-size: 40px;
+font-weight: bold;
+color: #000000;
+  -webkit-text-stroke: 1px #FFF;
+  text-stroke: 1px #FFF;
+text-align: center;
+line-height:200px;
+}
+
+.linkber{
+  background-color: skyblue;
+  margin-top: 0px;
+}
+.linkber li{
+  list-style: none;
+  float:left;
+  padding: 20px;
+}
+.main{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 700px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #FFF;
+
+}
+
+table {
+   width: 600px;
+   border-collapse: collapse;
+	 border-spacing: 0;
+   border: 2px solid blue; /* 外枠 */
+}
+table th, table td {
+   border-style: solid dotted;/* 線種 */
+   border-width: 2px; /* 線の太さ */
+   border-color: blue; /* 線色 */
+	padding: 10px 10px;
+	text-align: center;
+}
+table tr:nth-child(odd){
+  background-color: skyblue;
+}
+
+span{
+  color: red;
+  font-weight: bold;
+  font-size: 20px;
+}
+.footer {
+background-color: #4682B4;
+background-size: cover;
+height: 100px;
+}

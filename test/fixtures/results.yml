@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  doc_num: 
+  doc_mater: 
+
+two:
+  doc_num: 
+  doc_mater: 

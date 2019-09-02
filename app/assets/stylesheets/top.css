@@ -1,0 +1,78 @@
+body {
+  background-color: #e0ffff;
+  margin: 0px 0px 0px 0px;
+  min-width:700px;
+}
+
+.headerbg {
+background-image: url("treatment-03.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+height: 200px;
+min-width: 700px;
+}
+
+.header{
+font-size: 40px;
+font-weight: bold;
+color: #000000;
+  -webkit-text-stroke: 1px #FFF;
+  text-stroke: 1px #FFF;
+text-align: center;
+line-height:200px;
+}
+
+.linkbar{
+  width: auto;
+  height: 90px;
+  background-color: skyblue;
+  min-width: 1500px;
+}
+
+.linkbar li{
+  list-style: none;
+  float: left;
+  padding: 30px;
+}
+
+.main{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 700px;
+  border: double 0.5px #000000;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #FFF;
+
+}
+
+  /* すべてのラベルを同じサイズにして、きちんと揃える */
+label {
+  display: inline-block;
+  width: 250px;
+}
+
+.textbox{
+  width: 360px;
+  text-align: left;
+}
+
+#form2 {
+	width:450px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+}
+
+ul{
+border: 1px solid #000000;
+list-style: none;
+text-align: left;
+}
+
+.footer {
+background-color: #4682B4;
+background-size: cover;
+height: 150px;
+}

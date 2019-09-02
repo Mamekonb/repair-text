@@ -1,7 +1,66 @@
-<%= form_for Tweet.new do |f| %>
-  <%= f.label :title %>
-  <%= f.text_field :title %>
-  <%= f.label :content %>
-  <%= f.text_area :content %>
-  <%= f.submit %>
-<% end %>
+<body>
+  <!-- ヘッダー開始 -->
+  <div class ="headerbg">
+  <div class = "header">水損公文書修復費用簡易計算フォーム</div>
+  </div>
+  <!-- ヘッダー終了 -->
+  <div class="linkbar">
+    <ul>
+      <li><%= link_to("修復費用計算フォーム","/calculate/new") %></li>
+      <li><%= link_to("水損公文書修復活動とは","/calculate/about") %></li>
+      <li><%= link_to("修復方法-自然乾燥","/calculate/natural") %></li>
+      <li><%= link_to("修復方法-文書洗浄","/calculate/wash") %></li>
+      <li><%= link_to("修復事例","/calculate/case") %></li>
+      <li><%= link_to("修復物品購入フォーム","/calculate/shop") %></li>
+    </ul>
+  </div>
+  <!-- フォーム部分開始 -->
+  <div class="main">
+
+  <!-- テキストボックスを配置 -->
+  <%= form_tag calculate_path do |f| %>
+    <div class="num_form"><br>
+      <!-- 水損史料の冊数を入力するテキストボックスを用意 -->
+    <label for="doc_num"><p class="textbox">＊水損史料冊数：</p></label>
+    <%= text_field_tag :doc_num %>冊<br>
+      <!-- 水損史料の厚さを入力するテキストボックスを用意 -->
+
+    <label for="doc_mater"><p class="textbox">＊被害文書を全て並べた時の厚さ：</p></label>
+    <%= text_field_tag :doc_mater %>m<br>
+    </div>
+    <%= submit_tag "費用を計算する" %><br><br>
+    <% end %>
+    <!-- 終了 -->
+
+    <!-- 修復状態を選択するラジオボタンを配置 -->
+
+    <form id="form2">
+    <p class="state">＊求める修復状態</p>
+      <input type="radio" name="method" id="method_1" value="自然乾燥" class="radio" />
+      <label for="size_1" >自然乾燥</label><br>
+      <br><%= image_tag('自然乾燥.png') %><br><!-- 相対URL -->
+      修復状態サンプル写真：自然乾燥された文書<br><br>
+      ◆”保存”が目的である<br>
+      ◆文字の認識ができないものがあってもいい<br>
+      ◆文書がそこまで泥や砂にまみれていない<br>
+
+      <input type="radio" name="method" id="method_2" value="文書洗浄" class="radio" />
+      <label for="size_2">文書洗浄</label><br>
+      <br><%= image_tag('文書洗浄.png') %><br><!-- 相対URL -->
+      修復状態サンプル写真：フローティングボード法・<br>エアストリーム法により洗浄された文書<br><br>
+      ◆ある程度きれいな状態での保存を希望する<br>
+      ◆頻繁に利用する資料である<br>
+      ◆文書が汚泥にまみれている<br><br>
+
+    </form>
+    <!-- ラジオボタン終了 -->
+
+</div>
+<!-- フォーム部分終了 -->
+
+<!-- フッター開始 -->
+<div class="footer">
+</div>
+<!-- フッター終了 -->
+</body>
+</html>
